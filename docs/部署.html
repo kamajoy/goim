@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
-<!-- saved from url=(0025)http://goim.io/tutorials/ -->
-<html lang="zh-CN" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en-US">
+  <head>
 
     
-      <script type="text/javascript" async="" src="./教程_ GOIM_files/analytics.js.下载"></script><script async="" src="./教程_ GOIM_files/js"></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131412507-1"></script>
       <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -11,17 +12,17 @@
         gtag('config', 'UA-131412507-1');
       </script>
     
-    
+    <meta charset="UTF-8">
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>教程|  GOIM</title>
-<meta name="generator" content="Jekyll v3.7.4">
-<meta property="og:title" content="Tutorials">
-<meta property="og:locale" content="en_US">
-<meta name="description" content="goim is a im server writen by golang.">
-<meta property="og:description" content="goim is a im server writen by golang.">
-<link rel="canonical" href="http://tutorials/">
-<meta property="og:url" content="//tutorials/">
-<meta property="og:site_name" content="GOIM">
+<title>Tutorials | GOIM</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Tutorials" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="goim is a im server writen by golang." />
+<meta property="og:description" content="goim is a im server writen by golang." />
+<link rel="canonical" href="//tutorials/" />
+<meta property="og:url" content="//tutorials/" />
+<meta property="og:site_name" content="GOIM" />
 <script type="application/ld+json">
 {"@type":"WebPage","url":"//tutorials/","headline":"Tutorials","description":"goim is a im server writen by golang.","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
@@ -29,209 +30,208 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="./教程_ GOIM_files/style.css">
-  <link type="text/css" rel="stylesheet" charset="UTF-8" href="./教程_ GOIM_files/translateelement.css"></head>
-  <body style="">
+    <link rel="stylesheet" href="/assets/css/style.css?v=8acffa6570509c56334502950cec8d700a9c1d79">
+  </head>
+  <body>
     <header class="page-header" role="banner">
-      <h1 class="project-name"><a class="project-link" href="http://goim.io/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GOIM</font></font></a></h1>
-      <h2 class="project-tagline"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">goim是golang写的im服务器。</font></font></h2>
+      <h1 class="project-name"><a class="project-link" href="/">GOIM</a></h1>
+      <h2 class="project-tagline">goim is a im server writen by golang.</h2>
       
-        <a href="https://github.com/Terry-Mao/goim" class="btn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看GitHub </font></font></a>
-        <a href="http://goim.io/tutorials" class="btn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">教程</font></font></a>
-        <a href="https://github.com/Terry-Mao/goim/releases" class="btn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最新版本</font></font></a>
+        <a href="https://github.com/Terry-Mao/goim" class="btn">View on GitHub</a>
+        <a href="/tutorials" class="btn">Tutorials</a>
+        <a href="https://github.com/Terry-Mao/goim/releases" class="btn">Latest Releases</a>
       
     </header>
 
     <main id="content" class="main-content" role="main">
-      <h3 id="tutorials"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">教程</font></font></h3>
+      <h3 id="tutorials">Tutorials</h3>
 
 <ul>
-  <li><a href="http://goim.io/tutorials/#quick-start"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速开始</font></font></a></li>
-  <li><a href="http://goim.io/tutorials/#configuration"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">组态</font></font></a></li>
-  <li><a href="http://goim.io/tutorials/#dependencies"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">依赖</font></font></a></li>
-  <li><a href="http://goim.io/tutorials/#deployments"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部署</font></font></a></li>
-  <li><a href="http://goim.io/tutorials/#documents"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件</font></font></a></li>
-  <li><a href="http://goim.io/tutorials/#examples"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">例子</font></font></a></li>
+  <li><a href="#quick-start">Quick Start</a></li>
+  <li><a href="#configuration">Configuration</a></li>
+  <li><a href="#dependencies">Dependencies</a></li>
+  <li><a href="#deployments">Deployments</a></li>
+  <li><a href="#documents">Documents</a></li>
+  <li><a href="#examples">Examples</a></li>
 </ul>
 
-<h3 id="quick-start"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速开始</font></font></h3>
+<h3 id="quick-start">Quick Start</h3>
 
-<h4 id="build"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">建立</font></font></h4>
+<h4 id="build">Build</h4>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd $GOPATH/src <font></font>
-mkdir -p github.com/Terry-Mao/<font></font>
-cd github.com/Terry-Mao/<font></font>
-git clone https://github.com/Terry-Mao/goim.git<font></font>
-cd goim<font></font>
-<font></font>
-make build<font></font>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd $GOPATH/src 
+mkdir -p github.com/Terry-Mao/
+cd github.com/Terry-Mao/
+git clone https://github.com/Terry-Mao/goim.git
+cd goim
+
+make build
 </code></pre></div></div>
 
-<h4 id="run"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">跑</font></font></h4>
+<h4 id="run">Run</h4>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make run<font></font>
-make stop<font></font>
-<font></font>
-// Or use<font></font>
-target/logic -conf=target/logic.toml -region=sh -zone=sh001 -deploy.env=dev -weight=10<font></font>
-target/comet -conf=target/comet.toml -region=sh -zone=sh001 -deploy.env=dev -weight=10 addrs=127.0.0.1<font></font>
-target/job -conf=target/job.toml -region=sh -zone=sh001 -deploy.env=dev<font></font>
-<font></font>
-// View the running process<font></font>
-// If no process is running, please check the logs for debugging.  <font></font>
-ps -ef|grep target<font></font>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make run
+make stop
+
+// Or use
+target/logic -conf=target/logic.toml -region=sh -zone=sh001 -deploy.env=dev -weight=10
+target/comet -conf=target/comet.toml -region=sh -zone=sh001 -deploy.env=dev -weight=10 addrs=127.0.0.1
+target/job -conf=target/job.toml -region=sh -zone=sh001 -deploy.env=dev
+
+// View the running process
+// If no process is running, please check the logs for debugging.  
+ps -ef|grep target
 </code></pre></div></div>
 
-<h3 id="configuration"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">组态</font></font></h3>
+<h3 id="configuration">Configuration</h3>
 
-<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以在target / comet.toml，logic.toml，job.toml中查看注释，以了解配置的含义。</font></font></p>
+<p>You can view the comments in target/comet.toml,logic.toml,job.toml to understand the meaning of the config.</p>
 
-<h4 id="environment"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">环境</font></font></h4>
+<h4 id="environment">Environment</h4>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    env:<font></font>
-    export REGION=sh<font></font>
-    export ZONE=sh001<font></font>
-    export DEPLOY_ENV=dev<font></font>
-<font></font>
-    supervisor:<font></font>
-    environment=REGION=sh,ZONE=sh001,DEPLOY_ENV=dev<font></font>
-<font></font>
-    go flag:<font></font>
-    -region=sh -zone=sh001 deploy.env=dev<font></font>
-<font></font>
-    -region=sh (Configure to comet,logic,job)<font></font>
-        avaliable region. or use REGION env variable, value: sh etc.<font></font>
-    -zone=sh001 (Configure to comet,logic,job)<font></font>
-        avaliable zone. or use ZONE env variable, value: sh001/sh002 etc.<font></font>
-    -deploy.env (Configure to comet,logic,job)<font></font>
-        deploy env. or use DEPLOY_ENV env variable, value: dev/fat1/uat/pre/prod etc.<font></font>
-    -weight (Configure to comet,logic)<font></font>
-        load balancing weight, or use WEIGHT env variable, value: 10 etc.<font></font>
-    -addrs (Configure to comet)<font></font>
-        public network IP address, or use ADDRS env variable, value: 127.0.0.1 etc.<font></font>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    env:
+    export REGION=sh
+    export ZONE=sh001
+    export DEPLOY_ENV=dev
+
+    supervisor:
+    environment=REGION=sh,ZONE=sh001,DEPLOY_ENV=dev
+
+    go flag:
+    -region=sh -zone=sh001 deploy.env=dev
+
+    -region=sh (Configure to comet,logic,job)
+        avaliable region. or use REGION env variable, value: sh etc.
+    -zone=sh001 (Configure to comet,logic,job)
+        avaliable zone. or use ZONE env variable, value: sh001/sh002 etc.
+    -deploy.env (Configure to comet,logic,job)
+        deploy env. or use DEPLOY_ENV env variable, value: dev/fat1/uat/pre/prod etc.
+    -weight (Configure to comet,logic)
+        load balancing weight, or use WEIGHT env variable, value: 10 etc.
+    -addrs (Configure to comet)
+        public network IP address, or use ADDRS env variable, value: 127.0.0.1 etc.
 </code></pre></div></div>
 
-<h4 id="log-githubcomgolangglog"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">记录（github.com/golang/glog）</font></font></h4>
+<h4 id="log-githubcomgolangglog">Log (github.com/golang/glog)</h4>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-logtostderr=false<font></font>
-    Logs are written to standard error instead of to files.<font></font>
--alsologtostderr=false<font></font>
-    Logs are written to standard error as well as to files.<font></font>
--stderrthreshold=ERROR<font></font>
-    Log events at or above this severity are logged to standard<font></font>
-    error as well as to files.<font></font>
--log_dir=""<font></font>
-    Log files will be written to this directory instead of the<font></font>
-    default temporary directory.<font></font>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-logtostderr=false
+    Logs are written to standard error instead of to files.
+-alsologtostderr=false
+    Logs are written to standard error as well as to files.
+-stderrthreshold=ERROR
+    Log events at or above this severity are logged to standard
+    error as well as to files.
+-log_dir=""
+    Log files will be written to this directory instead of the
+    default temporary directory.
 </code></pre></div></div>
 
-<h3 id="dependencies"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">依赖</font></font></h3>
+<h3 id="dependencies">Dependencies</h3>
 
-<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请按照官方快速入门。</font></font></p>
+<p>Please follow the official quick start.</p>
 
 <ul>
-  <li><a href="https://github.com/Bilibili/discovery"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发现</font></font></a></li>
-  <li><a href="https://kafka.apache.org/quickstart"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">卡夫卡</font></font></a></li>
+  <li><a href="https://github.com/Bilibili/discovery">Discovery</a></li>
+  <li><a href="https://kafka.apache.org/quickstart">Kafka</a></li>
 </ul>
 
-<h3 id="deployments"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部署</font></font></h3>
+<h3 id="deployments">Deployments</h3>
 
-<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装comet / logic / job模块并使用Supervisor管理（您可能需要根据服务器更改配置文件）。</font></font></p>
+<p>Install comet/logic/job modules and use Supervisor management (You might need to change the configuration files based on your servers).</p>
 
-<h4 id="download-goim"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载goim</font></font></h4>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir -p /data/app/goim/<font></font>
-cp -f target/* /data/app/goim/<font></font>
+<h4 id="download-goim">download goim</h4>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir -p /data/app/goim/
+cp -f target/* /data/app/goim/
 </code></pre></div></div>
 
-<h4 id="install-supervisor"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装主管</font></font></h4>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get install supervisor<font></font>
-mkdir -p /etc/supervisor/conf.d<font></font>
-cd /etc/supervisor/conf.d<font></font>
-# add supervisor config(comet.conf,logic.conf,job.conf)<font></font>
-supervisorctl update<font></font>
+<h4 id="install-supervisor">install supervisor</h4>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get install supervisor
+mkdir -p /etc/supervisor/conf.d
+cd /etc/supervisor/conf.d
+# add supervisor config(comet.conf,logic.conf,job.conf)
+supervisorctl update
 </code></pre></div></div>
-<h5 id="cometconf"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">comet.conf</font></font></h5>
+<h5 id="cometconf">comet.conf</h5>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[program:comet]<font></font>
-name = comet<font></font>
-command= /data/app/goim/comet -conf /data/app/goim/comet.toml<font></font>
-autostart = true<font></font>
-autorestart = true<font></font>
-priority = 2<font></font>
-startsecs = 1<font></font>
-startretries = 3<font></font>
-exitcodes = 0,2<font></font>
-stopsignal = QUIT<font></font>
-stopwaitsecs = 10<font></font>
-user = root<font></font>
-stdout_logfile = /data/log/goim/comet_stdout.log<font></font>
-stdout_logfile_backups = 10<font></font>
-stderr_logfile = /data/log/goim/comet_stderr.log<font></font>
-stderr_logfile_backups = 10<font></font>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[program:comet]
+name = comet
+command= /data/app/goim/comet -conf /data/app/goim/comet.toml
+autostart = true
+autorestart = true
+priority = 2
+startsecs = 1
+startretries = 3
+exitcodes = 0,2
+stopsignal = QUIT
+stopwaitsecs = 10
+user = root
+stdout_logfile = /data/log/goim/comet_stdout.log
+stdout_logfile_backups = 10
+stderr_logfile = /data/log/goim/comet_stderr.log
+stderr_logfile_backups = 10
 </code></pre></div></div>
-<h4 id="logicconf"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">logic.conf</font></font></h4>
+<h4 id="logicconf">logic.conf</h4>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[program:logic]<font></font>
-name = logic<font></font>
-command= /data/app/goim/logic -conf /data/app/goim/logic.toml<font></font>
-autostart = true<font></font>
-autorestart = true<font></font>
-priority = 1<font></font>
-startsecs = 1<font></font>
-startretries = 3<font></font>
-exitcodes = 0,2<font></font>
-stopsignal = QUIT<font></font>
-stopwaitsecs = 10<font></font>
-user = root<font></font>
-stdout_logfile = /data/log/goim/logic_stdout.log<font></font>
-stdout_logfile_backups = 10<font></font>
-stderr_logfile = /data/log/goim/logic_stderr.log<font></font>
-stderr_logfile_backups = 10<font></font>
-</code></pre></div></div>
-
-<h4 id="jobconf"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">job.conf</font></font></h4>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[program:job]<font></font>
-name = job<font></font>
-command= /data/app/goim/job -conf /data/app/goim/job.toml<font></font>
-autostart = true<font></font>
-autorestart = true<font></font>
-priority = 2<font></font>
-startsecs = 1<font></font>
-startretries = 3<font></font>
-exitcodes = 0,2<font></font>
-stopsignal = QUIT<font></font>
-stopwaitsecs = 10<font></font>
-user = root<font></font>
-stdout_logfile = /data/log/goim/job_stdout.log<font></font>
-stdout_logfile_backups = 10<font></font>
-stderr_logfile = /data/log/goim/job_stderr.log<font></font>
-stderr_logfile_backups = 10<font></font>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[program:logic]
+name = logic
+command= /data/app/goim/logic -conf /data/app/goim/logic.toml
+autostart = true
+autorestart = true
+priority = 1
+startsecs = 1
+startretries = 3
+exitcodes = 0,2
+stopsignal = QUIT
+stopwaitsecs = 10
+user = root
+stdout_logfile = /data/log/goim/logic_stdout.log
+stdout_logfile_backups = 10
+stderr_logfile = /data/log/goim/logic_stderr.log
+stderr_logfile_backups = 10
 </code></pre></div></div>
 
-<h3 id="documents"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件</font></font></h3>
+<h4 id="jobconf">job.conf</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[program:job]
+name = job
+command= /data/app/goim/job -conf /data/app/goim/job.toml
+autostart = true
+autorestart = true
+priority = 2
+startsecs = 1
+startretries = 3
+exitcodes = 0,2
+stopsignal = QUIT
+stopwaitsecs = 10
+user = root
+stdout_logfile = /data/log/goim/job_stdout.log
+stdout_logfile_backups = 10
+stderr_logfile = /data/log/goim/job_stderr.log
+stderr_logfile_backups = 10
+</code></pre></div></div>
+
+<h3 id="documents">Documents</h3>
 <ul>
-  <li><a href="http://goim.io/docs/protocol.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">协议</font></font></a></li>
-  <li><a href="http://goim.io/docs/push.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">推送API</font></font></a></li>
-  <li><a href="http://goim.io/docs/cloud.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">云基础设施</font></font></a></li>
+  <li><a href="../docs/protocol.html">Protocol</a></li>
+  <li><a href="../docs/push.html">Push API</a></li>
+  <li><a href="/docs/cloud.html">Cloud Infrastructure</a></li>
 </ul>
 
-<h3 id="examples"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">例子</font></font></h3>
+<h3 id="examples">Examples</h3>
 <ul>
-  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在线示例：</font></font><a href="http://goim.io/examples"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在线示例</font></font></a></li>
-  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Websocket：</font></font><a href="https://github.com/Terry-Mao/goim/tree/master/examples/javascript"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Websocket客户端</font></font></a></li>
-  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Android：</font></font><a href="https://github.com/roamdy/goim-sdk"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Android客户端</font></font></a></li>
-  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">iOS：</font></font><a href="https://github.com/roamdy/goim-oc-sdk"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">iOS客户端</font></font></a></li>
+  <li>Online Example: <a href="/examples">Online Example</a></li>
+  <li>Websocket: <a href="https://github.com/Terry-Mao/goim/tree/master/examples/javascript">Websocket Client</a></li>
+  <li>Android: <a href="https://github.com/roamdy/goim-sdk">Android Client</a></li>
+  <li>iOS: <a href="https://github.com/roamdy/goim-oc-sdk">iOS Client</a></li>
 </ul>
 
 
       <footer class="site-footer">
         
-          <span class="site-footer-owner"><a href="https://github.com/Terry-Mao/goim"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Goim</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">由</font></font><a href="https://github.com/tonyboxes"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tony</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">维护</font><font style="vertical-align: inherit;">。</font></font></span>
+          <span class="site-footer-owner"><a href="https://github.com/Terry-Mao/goim">Goim</a> is maintained by <a href="https://github.com/tonyboxes">Tony</a>.</span>
         
-        <span class="site-footer-credits"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此页面由</font></font><a href="https://pages.github.com/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub Pages</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">生成</font><font style="vertical-align: inherit;">。</font></font></span>
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
       </footer>
     </main>
-  
-
-<div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./教程_ GOIM_files/translate_24dp.png" width="20" height="20" alt="Google 翻译"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">原文</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">提供更好的翻译建议</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div><div id="show_ip" class="show_left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">185.199.109.153</font></font></div><div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>
+  </body>
+</html>
